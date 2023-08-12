@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.4.0.schema.json
+
+PackageIdentifier: Microsoft.VisualStudioCode.Insiders
+PackageVersion: 1.82.0
+Commands:
+  - code-insiders
+InstallerType: inno
+InstallerSwitches:
+  Custom: /mergetasks=!runcode
+Installers:
+  - Architecture: arm64
+    Scope: machine
+    InstallerUrl: 'https://az764295.vo.msecnd.net/insider/76985ae7814f7cb28e2df6f1025d279bb77cbec1/VSCodeSetup-arm64-1.82.0-insider.exe'
+    InstallerSha256: 3cd7c5d4df4e0a34d5beabd49113df2273079436393f071eeb1532ab9745d319
+  - Architecture: arm64
+    Scope: user
+    InstallerUrl: 'https://az764295.vo.msecnd.net/insider/76985ae7814f7cb28e2df6f1025d279bb77cbec1/VSCodeUserSetup-arm64-1.82.0-insider.exe'
+    InstallerSha256: 69d239cc87394b434f1c66e5c3822243e021ee7e458a06f77fd48be80e775653
+  - Architecture: x64
+    Scope: machine
+    InstallerUrl: 'https://az764295.vo.msecnd.net/insider/76985ae7814f7cb28e2df6f1025d279bb77cbec1/VSCodeSetup-x64-1.82.0-insider.exe'
+    InstallerSha256: 3d8db1c87c09399e2e2e07a101839706a4d87e3bd9b3474d329eb3a2355ce5c3
+  - Architecture: x64
+    Scope: user
+    InstallerUrl: 'https://az764295.vo.msecnd.net/insider/76985ae7814f7cb28e2df6f1025d279bb77cbec1/VSCodeUserSetup-x64-1.82.0-insider.exe'
+    InstallerSha256: 944cb77c41e553f6a23c1738171605c5f40400fb67957ad45ec43300b9e40336
+  - Architecture: x86
+    Scope: machine
+    InstallerUrl: 'https://az764295.vo.msecnd.net/insider/76985ae7814f7cb28e2df6f1025d279bb77cbec1/VSCodeSetup-ia32-1.82.0-insider.exe'
+    InstallerSha256: 6e44bccfb6fddedeba37409ce4d46e1cc91ba9fb9c0ef9611c4c04c6402b1854
+  - Architecture: x86
+    Scope: user
+    InstallerUrl: 'https://az764295.vo.msecnd.net/insider/76985ae7814f7cb28e2df6f1025d279bb77cbec1/VSCodeUserSetup-ia32-1.82.0-insider.exe'
+    InstallerSha256: 868074f8f76d71297ad1a8c3ae2e320dc321ba1f7756ed03ae7382182c23f927
+ManifestType: installer
+ManifestVersion: 1.4.0
